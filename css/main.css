@@ -1,0 +1,113 @@
+
+
+.wd_logo {
+    font-family: "Revalia", cursive;
+    font-size: 48px;
+    transition: all 0.5s;
+}
+
+.wd_logo:hover {
+    animation: moving 0.7s ease-in ;
+}
+
+@keyframes moving {
+    20% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transform: skew(20deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: skew(30deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.nav-link {
+    transition: all 0.5s;
+}
+
+.nav-link:hover {
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 3px rgb(230, 226, 226);
+}
+
+.btn-primary {
+    background-color: #34547A;
+}
+.btn-primary:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+.projects:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+
+.progress:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+.video-img:hover{
+    transform: scale(0.99);
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px 6px grey;
+}
+.microsoft_img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+.gallery_img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.gallery_item{
+    position: relative;
+} 
+ .gallery__item-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background: rgba(52, 83, 122, 0.8);
+    transition: all 0.5s;
+}
+.gallery__item-link:hover {
+    opacity: 1;
+}
+
+
+
+
+
+@media(min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
